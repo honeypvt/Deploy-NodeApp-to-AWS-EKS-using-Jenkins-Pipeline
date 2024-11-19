@@ -31,7 +31,7 @@ pipeline {
             steps {
                 script {
                  withCredentials([string(credentialsId: 'devopshintdocker', variable: 'devopshintdocker')]) {
-                    sh 'docker login -u devopshint -p ${devopshintdocker}'
+                    sh 'docker login -u kushakumar -p ${devopshintdocker}'
             }
             sh 'docker push devopshint/node-app-1.0'
         }
