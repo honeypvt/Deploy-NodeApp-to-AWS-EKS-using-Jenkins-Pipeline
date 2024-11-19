@@ -9,7 +9,7 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('Hello World');
+  res.send('This site is deployed by kusha kumar using jenkins docker and AWS EKS services');
 });
 
 app.listen(PORT, HOST);
